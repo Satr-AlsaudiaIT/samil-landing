@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #b8854a;
+  --navy: #10223a;
+  --font-arabic: "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+
+html,
+body {
+  background-color: #fbfaf7;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+/* Subtle decorative grid for hero */
+.bg-grid {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 md:px-8;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-gold-600 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-navy-900/15 bg-white px-6 py-3 text-sm font-semibold text-navy-900 transition hover:border-navy-900/30 hover:bg-navy-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-navy-900/80 transition hover:bg-navy-50 hover:text-navy-900;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-navy-900;
+  }
+  .section-subtitle {
+    @apply mt-3 max-w-2xl text-base md:text-lg text-muted leading-relaxed;
+  }
+  .card {
+    @apply rounded-2xl border border-navy-900/5 bg-white p-7 shadow-soft transition hover:-translate-y-0.5 hover:shadow-glow;
+  }
+  .input {
+    @apply w-full rounded-xl border border-navy-900/10 bg-white px-4 py-3 text-sm text-navy-900 placeholder:text-muted outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-gold-500/30 bg-gold-50 px-3 py-1 text-xs font-medium text-gold-700;
+  }
+}

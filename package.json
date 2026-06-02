@@ -1,0 +1,38 @@
+{
+  "name": "samel-landing",
+  "version": "1.0.0",
+  "private": true,
+
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p ${PORT:-3001}",
+    "lint": "next lint",
+    "clean": "rm -rf .next out",
+ "docker:build": "docker build --no-cache  -t samel-website .",
+    "docker:run": "docker run -d -p 3001:3001 --name samel-website --restart unless-stopped samel-website",
+    "docker:rebuild": "npm run docker:build && npm run docker:run",
+    "docker:clean": "docker rm -f samel-website || true && docker rmi samel-website || true"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "better-sqlite3": "11.5.0",
+    "bcryptjs": "2.4.3",
+    "nodemailer": "6.9.14",
+    "lucide-react": "0.408.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/bcryptjs": "2.4.6",
+    "@types/better-sqlite3": "7.6.11",
+    "@types/nodemailer": "6.4.15",
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.39",
+    "tailwindcss": "3.4.6",
+    "typescript": "5.5.3"
+  }
+}

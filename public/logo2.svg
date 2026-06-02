@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <!-- Stylised building silhouette inspired by the Samel mark -->
+  <g stroke="#b8854a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" fill="none">
+    <!-- Outer arch -->
+    <path d="M40 150 L40 80 L120 30 L200 80 L200 150" />
+    <!-- Roof line -->
+    <path d="M55 80 L120 40 L185 80" />
+    <!-- Inner buildings -->
+    <path d="M75 150 L75 95 L105 95 L105 150" />
+    <path d="M135 150 L135 95 L165 95 L165 150" />
+    <!-- Top accent -->
+    <path d="M118 30 L122 30 L122 22 L118 22 Z" fill="#b8854a" />
+  </g>
+  <!-- Arabic wordmark -->
+  <text x="120" y="180" text-anchor="middle" font-family="'IBM Plex Sans Arabic', system-ui, sans-serif" font-size="22" font-weight="700" fill="#10223a">صامل</text>
+  <text x="120" y="196" text-anchor="middle" font-family="'IBM Plex Sans Arabic', system-ui, sans-serif" font-size="9" font-weight="500" fill="#b8854a" letter-spacing="1">للتسويق العقاري</text>
+</svg>
