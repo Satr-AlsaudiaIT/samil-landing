@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p ${PORT:-3001}",
+    "start": "next start -p ${PORT:-3002}",
     "lint": "next lint",
     "clean": "rm -rf .next out",
  "docker:build": "docker build --no-cache  -t samel-website .",
-    "docker:run": "docker run -d -p 3001:3001 --name samel-website --restart unless-stopped samel-website",
+    "docker:run": "docker run -d -p 3002:3002 --name samel-website --restart unless-stopped samel-website",
     "docker:rebuild": "npm run docker:build && npm run docker:run",
     "docker:clean": "docker rm -f samel-website || true && docker rmi samel-website || true"
   },
