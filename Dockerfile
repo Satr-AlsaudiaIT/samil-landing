@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Expose Next.js default port
-EXPOSE 3002
+EXPOSE 3004
 
 # Start the Next.js app
 CMD ["npm", "start"]
