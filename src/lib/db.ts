@@ -3,8 +3,8 @@ import path from "node:path";
 import fs from "node:fs";
 import bcrypt from "bcryptjs";
 
-// SQLite lives at <repo>/data/samel.db
-const DATA_DIR = path.join(process.cwd(), "data");
+// SQLite lives at <repo>/src/data/samel.db
+const DATA_DIR = path.join(process.cwd(), "src", "data");
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 const DB_PATH = path.join(DATA_DIR, "samel.db");
 
