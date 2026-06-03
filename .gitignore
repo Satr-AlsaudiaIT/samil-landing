@@ -8,7 +8,7 @@ build/
 *.tsbuildinfo
 next-env.d.ts
 
-data/*.db-journal
-src/data/*.db
-src/data/*.db-journal
+# data/*.db-journal
+# src/data/*.db
+# src/data/*.db-journal
 .DS_Store

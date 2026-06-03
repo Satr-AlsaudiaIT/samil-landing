@@ -1,10 +1,10 @@
 # Use Bun's official base image
 FROM node:20-alpine
 
-# Set working directory
+RUN apk add --no-cache python3 make g++
+
 WORKDIR /app
 
-# Copy dependencies and install with Bun
 COPY package.json ./
 RUN npm install
 
