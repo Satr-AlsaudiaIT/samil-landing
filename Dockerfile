@@ -1,7 +1,7 @@
 # Use Bun's official base image
 FROM node:20-alpine
-
-RUN apk add --no-cache python3 make g++
+#FROM node:20
+#RUN apk add --no-cache python3 make g++
 
 WORKDIR /app
 

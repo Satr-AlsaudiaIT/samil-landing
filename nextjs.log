@@ -1,0 +1,75 @@
+nohup: ignoring input
+
+> samel-landing@1.0.0 dev
+> next dev -p 3004
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3004
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.9s (615 modules)
+ GET / 200 in 6268ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 591ms (618 modules)
+ GET /_next/webpack-hmr 404 in 670ms
+ GET / 200 in 68ms
+ GET / 200 in 34ms
+ GET / 200 in 469ms
+ GET / 200 in 33ms
+ GET /_next/webpack-hmr 404 in 22ms
+ GET /_next/webpack-hmr 404 in 26ms
+ GET / 200 in 70ms
+ GET /_next/webpack-hmr 404 in 33ms
+ GET /apple-touch-icon-precomposed.png 404 in 30ms
+ GET /apple-touch-icon.png 404 in 30ms
+ GET / 200 in 35ms
+ GET / 200 in 51ms
+ GET /_next/webpack-hmr 404 in 16ms
+ GET / 200 in 41ms
+ GET /_next/webpack-hmr 404 in 16ms
+ GET / 200 in 56ms
+ GET /_next/webpack-hmr 404 in 15ms
+ GET / 200 in 39ms
+ GET /_next/webpack-hmr 404 in 16ms
+ GET / 200 in 46ms
+ GET /_next/webpack-hmr 404 in 16ms
+ GET / 200 in 31ms
+ GET /_next/webpack-hmr 404 in 27ms
+ GET /apple-touch-icon-precomposed.png 404 in 23ms
+ GET /apple-touch-icon.png 404 in 22ms
+ GET / 200 in 33ms
+ GET /_next/webpack-hmr 404 in 14ms
+ GET / 200 in 26ms
+ GET /_next/webpack-hmr 404 in 17ms
+ GET / 200 in 43ms
+ GET / 200 in 317ms
+ GET / 200 in 121ms
+ GET / 200 in 66ms
+ GET / 200 in 75ms
+ GET / 200 in 58ms
+ GET /_next/webpack-hmr 404 in 27ms
+ GET / 200 in 88ms
+ GET /_next/webpack-hmr 404 in 38ms
+ GET / 200 in 66ms
+ GET / 200 in 82ms
+ GET / 200 in 52ms
+ GET /_next/webpack-hmr 404 in 19ms
+ GET / 200 in 53ms
+ GET /_next/webpack-hmr 404 in 15ms
+ GET / 200 in 38ms
+ GET /_next/webpack-hmr 404 in 22ms
+ GET / 200 in 128ms
+ GET / 200 in 49ms
+ GET / 200 in 62ms
+ GET / 200 in 36ms
+ GET / 200 in 207ms
+ GET / 200 in 123ms
+ GET /_next/webpack-hmr 404 in 36ms
+ GET / 200 in 70ms
+ GET /_next/webpack-hmr 404 in 21ms
+ GET /_next/webpack-hmr 404 in 16ms
+ GET / 200 in 30ms
+ GET /_next/webpack-hmr 404 in 19ms
+Killed

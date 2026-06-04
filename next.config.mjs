@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["better-sqlite3", "bcryptjs", "nodemailer"],
-  },
-};
+  reactStrictMode: true,
 
-export default nextConfig;
+  // better-sqlite3 is a native module — Next.js must keep it external
+  // (not bundle it) so the .node binary is loaded from node_modules at runtime.
+  serverExternalPackages: ['better-sqlite3'],
+}
+
+export default nextConfig
